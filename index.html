@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body class="bg-black text-white">
+    <div class="flex mx-auto w-[90%]">
+        <div class="first md:w-[30%] w-[32px] flex flex-col md:space-y-5 relative md:items-end">
+
+
+            <div class="sidebar sticky top-0 md:w-3/5 w-full flex flex-col md:items-start items-end">
+                <div class="logo mt-1 hover:bg-gray-900 w-fit p-3 rounded-full"><svg viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        class=" w-7 invert r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                        <g>
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <ul class="flex flex-col font-medium text-xl">
+                    <li
+                        class="rounded-full w-fit hover:bg-gray-900 cursor-pointer flex items-center text-3xl space-x-3 p-3">
+                        <span class="material-symbols-outlined">
+                            home
+                        </span>
+                        <div class="text-xl hidden md:block">Home</div>
+                    </li>
+                    <li
+                        class="rounded-full w-fit hover:bg-gray-900 cursor-pointer flex items-center text-3xl space-x-3 p-3">
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                        <div class="text-xl hidden md:block">Search</div>
+                    </li>
+                    <li
+                        class="rounded-full w-fit hover:bg-gray-900 flex items-center text-3xl cursor-pointer space-x-3 p-3">
+                        <span class="material-symbols-outlined">
+                            notifications
+                        </span>
+                        <div class="text-xl hidden md:block">Notifications</div>
+                    </li>
+                    <li
+                        class="rounded-full w-fit hover:bg-gray-900 cursor-pointer flex items-center text-3xl space-x-3 p-3">
+                        <span class="material-symbols-outlined">
+                            mail
+                        </span>
+                        <div class="text-xl hidden md:block">Messages</div>
+                    </li>
+                    <li
+                        class="rounded-full w-fit hover:bg-gray-900 cursor-pointer flex items-center text-3xl space-x-3 p-3">
+                        <svg viewBox="0 0 33 32" aria-hidden="true"
+                            class="invert w-7 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                            <g>
+                                <path
+                                    d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466">
+                                </path>
+                            </g>
+                        </svg>
+                        <div class="text-xl hidden md:block">Grok</div>
+                    </li>
+                    <li
+                        class="rounded-full w-fit hover:bg-gray-900 cursor-pointer flex items-center text-3xl space-x-3 p-3">
+                        <span class="material-symbols-outlined">
+                            group
+                        </span>
+                        <div class="text-xl hidden md:block">Communities</div>
+                    </li>
+                    <li
+                        class="rounded-full w-fit hover:bg-gray-900 cursor-pointer flex items-center text-3xl space-x-3 p-3">
+                        <div class="logo mt-1 hover:bg-gray-700"><svg viewBox="0 0 24 24" aria-hidden="true"
+                                class=" w-6 invert r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                                <g>
+                                    <path
+                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="text-xl hidden md:block">Premium</div>
+                    </li>
+
+                    <li
+                        class="rounded-full w-fit hover:bg-gray-900 cursor-pointer flex items-center text-3xl space-x-3 p-3">
+                        <span class="material-symbols-outlined">
+                            bolt
+                        </span>
+                        <div class="text-xl hidden md:block">Verified Orgs</div>
+                    </li>
+
+
+
+                    <li
+                        class="rounded-full w-fit hover:bg-gray-900 cursor-pointer flex items-center text-3xl space-x-3 p-3">
+                        <span class="material-symbols-outlined">
+                            person
+                        </span>
+                        <div class="text-xl hidden md:block">Profile</div>
+                    </li>
+
+                    <li
+                        class="rounded-full w-fit hover:bg-gray-900 cursor-pointer flex items-center text-3xl space-x-3 p-3">
+                        <span class="material-symbols-outlined">
+                            more
+                        </span>
+                        <div class="text-xl hidden md:block">More</div>
+                    </li>
+
+
+                </ul>
+                <div class="post">
+                    <button class="bg-white text-black w-[200px] py-4 rounded-full font-bold">Post</button>
+                </div>
+
+                <div class="email flex items-center gap-4 py-3 rounded-full w-fit hover:bg-gray-900 cursor-pointer">
+                    <div class="email-id flex items-center">
+                        <img class="w-[65px] h-[65px] rounded-full" src="gratisography-augmented-reality-800x525.jpg"
+                            alt="gmaillogo">
+                        <div>
+
+                            <div class="font-bold">Sushovan Chakra...</div>
+                            <div class="text-gray-500">@AdamLyon20003</div>
+                        </div>
+                    </div>
+                    <div class="dots font-bold text-xl">...</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="second md:w-[40%] w-full border-[1px] border-x-gray-500 border-y-black">
+            <div class="foryou h-[4%] flex">
+                <div class="w-full flex justify-center items-center relative hover:bg-gray-900"><span>For You</span>
+                    <span class="line bg-blue-800 w-14 h-1 rounded-full absolute bottom-0"></span>
+
+                </div>
+                <div class="w-full flex justify-center items-center hover:bg-gray-900"><span>Following</span>
+
+                </div>
+            </div>
+
+            <div class="segment h-[1px] bg-gray-600"></div>
+
+            <div class="whatshapp flex p-3 p-4">
+
+                <div class="mylogo">
+                    <img src="https://pbs.twimg.com/profile_images/1869308023631654912/q9bMk9mg_bigger.jpg" alt="logo"
+                        class="h-11 w-11 rounded-full">
+                </div>
+                <div class="flex flex-col gap-5 w-full">
+                    <input type="text" class="text-xl outline-none bg-black w-full" placeholder="What is happening?">
+
+
+
+                    <div class="icons flex items-center justify-between">
+                        <div class="icon md:space-x-1 space-x-1">
+
+                            <span
+                                class="text-blue-600 w-fit material-symbols-outlined hover:bg-gray-900 rounded-full p-1 px-2 text-lg">
+                                image
+                            </span>
+                            <span
+                                class="text-blue-600 w-fit material-symbols-outlined hover:bg-gray-900 rounded-full p-1 px-2 text-lg">
+                                gif_box
+                            </span>
+
+                            <span
+                                class="text-blue-600 w-fit material-symbols-outlined hover:bg-gray-900 rounded-full p-1 px-2 text-lg">
+                                ballot
+                            </span>
+
+                            <span
+                                class="text-blue-600 w-fit material-symbols-outlined hover:bg-gray-900 rounded-full p-1 px-2 text-lg">
+                                mood
+                            </span>
+
+                            <span
+                                class="text-blue-600 w-fit material-symbols-outlined hover:bg-gray-900 rounded-full p-1 px-2 text-lg">
+                                event_repeat
+                            </span>
+                            <span
+                                class="text-blue-500 w-fit material-symbols-outlined hover:bg-gray-900 rounded-full p-1 px-2 text-lg">
+                                location_on
+                            </span>
+                        </div>
+
+                        <div class="postbtn">
+                            <button
+                                class="bg-white font-bold rounded-full px-3 py-2 hidden md:block text-black">Post</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="posts">
+                <div class="segment h-[1px] bg-gray-600"></div>
+                <div class="post flex p-4 g p-3">
+
+                    <img src="https://pbs.twimg.com/profile_images/1893803697185910784/Na5lOWi5_bigger.jpg" alt=""
+                        class="w-10 h-10 rounded-full">
+
+                    <div class="info space-y-1">
+                        <span>Elon Musk</span><span class="text-gray-600"> @elonmusk · 6h</span>
+                        <div><img src="https://abs-0.twimg.com/emoji/v2/svg/1f602.svg" alt="" class="w-5"></div>
+
+                        <img src="https://pbs.twimg.com/media/GoS1yM9XkAE5izi?format=jpg&name=900x900" alt=""
+                            class="rounded-xl border-[1px] border-gray-500">
+
+                        <div class="colouredicons flex justify-between">
+                            <div class="text-gray-500 flex items-center">
+                                <span
+                                    class="material-symbols-outlined text-gray-500 w-fit hover:text-blue-400 hover:bg-gray-900 p-2 rounded-full">
+                                    chat_bubble
+                                </span>3.2k
+                            </div>
+
+                            <div class="text-gray-500 flex items-center">
+                            <span
+                                class="material-symbols-outlined text-gray-500 hover:text-green-400 hover:bg-gray-900 p-2 rounded-full">
+                                repeat
+                            </span>30k
+                        </div>
+                        <div class="text-gray-500 flex items-center">
+                            <span
+                                class="material-symbols-outlined text-gray-500 hover:text-red-400 hover:bg-gray-900 p-2 rounded-full">
+                                favorite
+                            </span>128k
+                        </div>
+                        <div class="text-gray-500 flex items-center">
+                            <span
+                                class="material-symbols-outlined text-gray-500 hover:text-blue-400 hover:bg-gray-900 p-2 rounded-full">
+                                bar_chart
+                            </span>20M
+                        </div>
+                        <div class="text-gray-500 flex items-center">
+                            <span
+                                class="material-symbols-outlined text-gray-500 hover:text-blue-400 hover:bg-gray-900 p-2 rounded-full">
+                                bookmark
+                            </span>
+                        </div>
+                        <div class="text-gray-500 flex items-center">
+                            <span
+                                class="material-symbols-outlined text-gray-500 hover:text-blue-400 hover:bg-gray-900 p-2 rounded-full">
+                                download
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="segment h-[1px] bg-gray-600"></div>
+            <div class="post flex p-4 g p-3">
+                <img src="https://pbs.twimg.com/profile_images/1893803697185910784/Na5lOWi5_bigger.jpg" alt=""
+                    class="w-10 h-10 rounded-full">
+
+                <div class="info space-y-1">
+                    <span>Elon Musk</span><span class="text-gray-600"> @elonmusk · 6h</span>
+                    <div><img src="https://abs-0.twimg.com/emoji/v2/svg/1f602.svg" alt="" class="w-5"></div>
+
+                    <img src="https://pbs.twimg.com/media/GoS1yM9XkAE5izi?format=jpg&name=900x900" alt=""
+                        class="rounded-xl border-[1px] border-gray-500">
+                </div>
+
+            </div>
+            <div class="segment h-[1px] bg-gray-600"></div>
+            <div class="post flex p-4 g p-3">
+                <img src="https://pbs.twimg.com/profile_images/1893803697185910784/Na5lOWi5_bigger.jpg" alt=""
+                    class="w-10 h-10 rounded-full">
+
+                <div class="info space-y-1">
+                    <span>Elon Musk</span><span class="text-gray-600"> @elonmusk · 6h</span>
+                    <div><img src="https://abs-0.twimg.com/emoji/v2/svg/1f602.svg" alt="" class="w-5"></div>
+
+                    <img src="https://pbs.twimg.com/media/GoS1yM9XkAE5izi?format=jpg&name=900x900" alt=""
+                        class="rounded-xl border-[1px] border-gray-500">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="third w-[30%] pl-2 pt-1 space-y-3 hidden md:block">
+        <div class="search">
+            <input type="search" placeholder="Search"
+                class="w-[305px] bg-black text-white border-[1px] border-gray-500 rounded-full p-2">
+        </div>
+
+        <div class="subscribe border border-gray-500 w-[305px] rounded-xl p-2 space-y-2">
+            <h1 class="font-bold text-xl">Subscribe to Premium</h1>
+
+            <h3>Subscribe to unlock new features and if eligible, receive a share of revenue.</h3>
+            <button class="bg-blue-600 text-white font-bold rounded-full w-[120px] p-1">Subscribe</button>
+        </div>
+
+        <div class="whatshappening border border-gray-500 w-[305px] rounded-xl py-2 space-y-3">
+            <div class="whats font-bold text-2xl pl-4">What's happening</div>
+
+            <div class="item hover:bg-gray-950 w-full pl-4 cursor-pointer">
+
+                <div class="trending text-gray-600 flex items-center gap-[145px]">
+                    <div class="trend">Trending in India</div>
+
+                    <div class="dotted font-bold">...</div>
+                </div>
+                <div class="hash font-bold">#PriyaPrakashVarrier</div>
+                <div class="posts text-gray-600">9,652 posts</div>
+
+            </div>
+            <div class="item hover:bg-gray-950 w-full pl-4 cursor-pointer">
+
+                <div class="trending text-gray-600 flex items-center gap-[145px]">
+                    <div class="trend">Trending in India</div>
+
+                    <div class="dotted font-bold">...</div>
+                </div>
+                <div class="hash font-bold">#PriyaPrakashVarrier</div>
+                <div class="posts text-gray-600">9,652 posts</div>
+
+            </div>
+            <div class="item hover:bg-gray-950 w-full pl-4 cursor-pointer">
+
+                <div class="trending text-gray-600 flex items-center gap-[145px]">
+                    <div class="trend">Trending in India</div>
+
+                    <div class="dotted font-bold">...</div>
+                </div>
+                <div class="hash font-bold">#PriyaPrakashVarrier</div>
+                <div class="posts text-gray-600">9,652 posts</div>
+
+            </div>
+            <div class="item hover:bg-gray-950 w-full pl-4 cursor-pointer">
+
+                <div class="trending text-gray-600 flex items-center gap-[145px]">
+                    <div class="trend">Trending in India</div>
+
+                    <div class="dotted font-bold">...</div>
+                </div>
+                <div class="hash font-bold">#PriyaPrakashVarrier</div>
+                <div class="posts text-gray-600">9,652 posts</div>
+
+            </div>
+            <div class="item hover:bg-gray-950 w-full pl-4 cursor-pointer">
+
+                <div class="trending text-gray-600 flex items-center gap-[145px]">
+                    <div class="trend">Trending in India</div>
+
+                    <div class="dotted font-bold">...</div>
+                </div>
+                <div class="hash font-bold">#PriyaPrakashVarrier</div>
+                <div class="posts text-gray-600">9,652 posts</div>
+
+            </div>
+
+            <div class="showmore  hover:bg-gray-950 text-blue-600 pl-4 cursor-pointer">Show More</div>
+        </div>
+
+        <div class="whotofollow border border-gray-500 w-[305px] rounded-xl space-y-4">
+            <div class="font-bold text-white text-xl p-3">Who to follow</div>
+            <div class="follow h-[200px] flex items-center h-fit gap-2 hover:bg-slate-900 cursor-pointer pl-3">
+
+                <img src="images.jpg" alt="klrahul" class="w-[40px] h-[40px] rounded-full">
+                <div class="bios flex items-center w-3/4 justify-between">
+                    <div>
+
+                        <div class="name">Kl Rahul</div>
+                        <div class="attherate text-gray-600">@klrahul</div>
+                    </div>
+                    <div class="followbutton">
+                        <button class="bg-white text-black font-bold p-2 rounded-full px-3">Follow</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="follow h-[200px] flex items-center h-fit gap-2 hover:bg-slate-900 cursor-pointer pl-3">
+
+                <img src="images.jpg" alt="klrahul" class="w-[40px] h-[40px] rounded-full">
+                <div class="bios flex items-center w-3/4 justify-between">
+                    <div>
+
+                        <div class="name">Kl Rahul</div>
+                        <div class="attherate text-gray-600">@klrahul</div>
+                    </div>
+                    <div class="followbutton">
+                        <button class="bg-white text-black font-bold p-2 rounded-full px-3">Follow</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="showmore text-blue-700 pl-3 pb-4 hover:bg-slate-900 cursor-pointer rounded-xl">Show more
+            </div>
+
+        </div>
+        <div class="terms text-gray-500 pl-3 text-[12px] cursor-pointer hover:underline w-[305px]">
+            Terms of Service
+            Privacy Policy
+            Cookie Policy
+            Accessibility
+            Ads info
+
+            More
+            © 2025 X Corp.
+        </div>
+    </div>
+
+
+
+
+    </div>
+</body>
+
+</html>
